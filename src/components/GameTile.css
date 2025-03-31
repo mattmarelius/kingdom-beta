@@ -1,0 +1,104 @@
+.game-tile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  .game-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .game-tile input,
+  .game-tile select {
+    width: 200px;
+  }
+  
+  .game-tile h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+  }
+  
+  /* Clue styling */
+  .clue-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .clue-arrow {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Image styling */
+  .target-image {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .target-image img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Debug info styling */
+  .debug-info {
+    color: #ffffff;
+    font-size: 0.8em;
+    white-space: pre-wrap;
+  }
+  
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popup-content h2 {
+    margin: 0 0 15px;
+  }
+  
+  .popup-content button {
+    padding: 5px 10px;
+  }
+  
+  /* Error and Loading message styling */
+  .error-message {
+    color: #ff0000; /* Bright red for visibility */
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for contrast */
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+  }
+  
+  .loading-message {
+    color: #0000ff; /* Blue for visibility */
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+  }
