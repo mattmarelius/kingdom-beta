@@ -49,7 +49,7 @@ const GameTile: React.FC<GameTileProps> = ({ target }) => {
 
   useEffect(() => {
     // Fetch common names
-    fetch("https://kingdom.vercel.app/api/common-names")
+    fetch("/api/common-names")
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch common names");
         return response.json();
@@ -66,7 +66,7 @@ const GameTile: React.FC<GameTileProps> = ({ target }) => {
     // Fetch taxonomy for the target
     if (target) {
       fetch(
-        `https://kingdom.vercel.app/api/taxonomy?name=${encodeURIComponent(
+        `/api/taxonomy?name=${encodeURIComponent(
           target
         )}`
       )
@@ -131,7 +131,7 @@ const GameTile: React.FC<GameTileProps> = ({ target }) => {
     }
 
     fetch(
-      `https://kingdom.vercel.app/api/taxonomy?name=${encodeURIComponent(
+      `/api/taxonomy?name=${encodeURIComponent(
         selectedName
       )}`
     )

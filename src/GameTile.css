@@ -1,0 +1,6 @@
+.game-tile { max-width: 800px; margin: 20px auto; text-align: center; }
+.clue-section { margin-bottom: 20px; }
+.dropdown-section { margin-bottom: 20px; }
+.correct { background-color: #d4edda; }
+.incorrect { background-color: #f8d7da; }
+.error { color: red; }
